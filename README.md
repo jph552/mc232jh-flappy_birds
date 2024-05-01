@@ -1,18 +1,15 @@
-Point_Control_Via_Joystick
-==========================
+N5110 LCD Library
+=================
 
-Function:               Draws a point at the centre of the screen, its position changes in accordance with user input (via the joystick).
-Circuit Schematic No.:  9        : https://github.com/ELECXJEL2645/Circuit_Schematics
-Required Libraries:     Joystick : https://github.com/ELECXJEL2645/Joystick
-                        N5110    : https://github.com/ELECXJEL2645/N5110
+Function:              Library for interfacing with Nokia 5110 LCD display (https://www.sparkfun.com/products/10168) using 
+                       the hardware SPI on the mbed.The display is powered from a GPIO pin meaning it can be controlled                              via software. The LED backlight is also software-controllable (via PWM pin). Can print characters                            and strings to the display using the included 5x7 font. The library also implements a screen buffer                          so that individual pixels on the display (84 x 48) can be set, cleared and read. The library can                              print primitive shapes (lines, circles, rectangles). Acknowledgements to Chris Yan's Nokia_5110                              Library.
 
-Authored by:            Andrew Knowles
-Date:                   2021
-Collaberators:          Dr Craig Evans
+Authored by:            Dr Craig Evans
                         Dr Alexander Valavanis
-                        Dr Tim Amsdon
-Version:                1.0
+Date:                   2017
+Collaberators:          Dr Tim Amsdon
+                        Andrew Knowles
+Version:                1.3
 Revision Date:          06/2022 
 MBED Studio Version:    1.4.1
 MBED OS Version:        6.12.0
-Board:	                NUCLEO L476RG
