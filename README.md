@@ -1,15 +1,9 @@
-N5110 LCD Library
-=================
 
-Function:              Library for interfacing with Nokia 5110 LCD display (https://www.sparkfun.com/products/10168) using 
-                       the hardware SPI on the mbed.The display is powered from a GPIO pin meaning it can be controlled                              via software. The LED backlight is also software-controllable (via PWM pin). Can print characters                            and strings to the display using the included 5x7 font. The library also implements a screen buffer                          so that individual pixels on the display (84 x 48) can be set, cleared and read. The library can                              print primitive shapes (lines, circles, rectangles). Acknowledgements to Chris Yan's Nokia_5110                              Library.
 
-Authored by:            Dr Craig Evans
-                        Dr Alexander Valavanis
-Date:                   2017
-Collaberators:          Dr Tim Amsdon
-                        Andrew Knowles
-Version:                1.3
-Revision Date:          06/2022 
+Function:              
+This project is a simple Flappy Bird game implemented on an LCD and controlled via a joystick, designed for the NUCLEO L476RG board with MBED Studio 1.4.1 or later. The game features a bird sprite that moves up and down, avoiding obstacles in the form of tubes. The hardware requirements include the NUCLEO L476RG board, an N5110 LCD, a joystick with X and Y axes, additional buttons, and appropriate wiring. To set up, follow the circuit schematic provided in the project repository, import the Joystick and N5110 libraries, compile the code, and flash it onto the NUCLEO board. Once the hardware is connected and the code is flashed, pressing the free button starts the game. The joystick controls the bird's movement—up, down, left, or right—to navigate through the tubes and score points. If the bird collides with a tube, the game ends. To exit the game, press the joystick button. 
+Authored by:            Joseph Horlock
+Date:                   2024
+Version:                1.0
 MBED Studio Version:    1.4.1
 MBED OS Version:        6.12.0
